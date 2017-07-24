@@ -1,0 +1,24 @@
+{
+  "name": "accumulatorExercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadellison/accumulatorExercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadellison/accumulatorExercise/issues"
+  },
+  "homepage": "https://github.com/chadellison/accumulatorExercise#readme",
+  "dependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
+}
