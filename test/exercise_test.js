@@ -4,7 +4,7 @@
  const Exercise = require('../exercise')
  const Hospital = require('../hospital')
  const Patient = require('../patient')
-
+ const CashRegister = require('../cashRegister')
  describe('Exercise', () => {
      it('charCountReturnsTheCountOfEachChar', () => {
          let first = 'ab'
@@ -27,9 +27,17 @@
          expect(hospital.checkForPatient(patient3)).to.equal(false);
 
      })
+     it('cash register should be able to determine if change can be given', () => {
+         const register = new CashRegister();
+         const trans1 = new Transaction({ones: 5, tens: 1})
+         const trans2 = new Transaction({twenty: 1})
+         const transactions = register.transactions;
+         expect(register.canMakeChange(transactions)).to.equal(false);
+     })
  })
 
 
- // create patient object with properties
- // create hospital with method that checks if patients are
- //checked in
+// create cash register
+// has properties drawer cash
+// tickets are $15
+// make change method;
